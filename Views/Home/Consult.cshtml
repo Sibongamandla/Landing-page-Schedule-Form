@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"]= "Consult";
+}
+
+<div class="container">
+    <h3>Book a consultation with your lecture</h3>
+
+    <p>Your information:</p>
+    <form>
+
+        <div class="row">
+        <div class="mb-3 col-6">
+            <label for=" firstName" class="form-label">First Name</label>
+            <input type ="text" class="form-control" id="firstName" required />
+        </div>
+
+        <div class="mb-3 col-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="mb-3 col-8">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="mb-3 col-6">
+            <label for="comments" class="form-label">Comments</label>
+            <textarea class="form-control" id="comment" rows="5" placeholder="Enter any additional comments"></textarea>
+        </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
